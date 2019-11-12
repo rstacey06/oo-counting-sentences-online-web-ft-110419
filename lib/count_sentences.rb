@@ -16,7 +16,7 @@ class String
   end
 
   def count_sentences
-    self.split(/\.|\?|\!/).delete 
+    self.split(/\.|\?|\!/).delete_if {|item| block} => integer 
 
   end
 end
